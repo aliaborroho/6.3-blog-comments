@@ -59,11 +59,11 @@ var AppView = Backbone.View.extend({
     var _this = this;
 
     this.$el.html(html);
-    this.collection.sortBy('title').forEach(function(comments) {
+    this.collection.sortBy('title').slice(0, 10).forEach(function(comments) {
       var childView = new CommentsView({model: comments});
 
       _this.$el.find('.comments-list')
-      .append(childView.render().$el);
+        .append(childView.render().$el);
     });
 
     console.info('render');

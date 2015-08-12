@@ -3,3 +3,78 @@
 @import 'bourbon';
 @import 'neat';
 @import 'border-box';
+
+.commentsapp {
+    max-width: 322px;
+    margin: auto;
+    font-family: georgia;
+    color: #6E00E7
+}
+h1 {
+    margin-top: 2em;
+    font-size: 30pt;
+    text-align: center;
+}
+button {
+    border: none;
+    box-shadow:
+      0 1px 2px #fff,
+      0 -1px 1px #666, /*top external shadow*/
+      inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+      inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
+    font-size: 15pt;
+    border-radius: 15px;
+}
+button:hover {
+    cursor: pointer;
+}
+.toggle-comment {
+    width: 100%;
+    margin-top: 2em;
+    background-color: rgba(150,200,0,0.3);
+}
+
+form {
+    display: none;
+    margin-top: 1em;
+    max-width: 322px;
+}
+
+.submit-button {
+    width: 100%;
+    margin-top: 1em;
+    background-color: rgba(150,200,0,0.5);
+}
+.previous-comments {
+    max-width: 322px;
+    margin: auto;
+    margin-top: .5em;
+    font-family: sans-serif;
+}
+
+.logged {
+    border: 1px solid blue;
+    padding: 5px;
+    font-size: 14pt;
+    box-shadow:
+      0 1px 2px #fff, /*bottom external highlight*/
+      0 -1px 1px #666, /*top external shadow*/
+      inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+      inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
+}
+
+h3 {
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 5px 0 5px 0;
+    font-size: 15pt;
+}
+
+.email-label {
+    color: #8D55E2;
+}
+.email{
+    color:#66006E
+}
+
+
