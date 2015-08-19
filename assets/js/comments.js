@@ -3,10 +3,11 @@ var Comments = Backbone.Model.extend({
   defaults: {
     email: '',
     comments: ''
+    url: http://tiny-lr.herokuapp.com/collections/ab-comments
   }
 });
 
 var CommentList = Backbone.Collection.extend({
   model: Comments,
-  url: 'http://tiny-lr.herokuapp.com/collections/ab-comments'
+  url-root: 'http://tiny-lr.herokuapp.com/collections/ab-comments'
 });
