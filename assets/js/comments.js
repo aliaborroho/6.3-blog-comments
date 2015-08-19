@@ -3,7 +3,7 @@ var Comments = Backbone.Model.extend({
   defaults: {
     email: '',
     comments: '',
-    url: 'http:tiny-lr.herokuapp.com/collections/ab-comments',
+    url: //'http:tiny-lr.herokuapp.com/collections/ab-comments',
   }
 });
 
